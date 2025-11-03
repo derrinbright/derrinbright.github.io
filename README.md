@@ -11,7 +11,7 @@ I'm currently a **Research Intern at Boston University** and the **University of
 🔗 **Connect with me:**
 - [**Email**](mailto:derrin.bright2022@vitstudent.ac.in) 
 - [**LinkedIn**](https://www.linkedin.com/in/derrin-bright-25457a23b/) 
-- [**Portfolio**](https://derrinbright.github.io/) ---
+- [**Portfolio**](https://derrinbright.github.io/) 
 
 ## 💻 Technical Skills
 
@@ -34,5 +34,6 @@ I'm currently a **Research Intern at Boston University** and the **University of
 ### Education
 - **B.Tech, Biotechnology** (CGPA: 8.69) 
 - Vellore Institute of Technology(VIT), India (2022-Present) 
+
 
 
