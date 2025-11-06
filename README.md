@@ -8,12 +8,12 @@ My work and research experience involves analyzing transcriptomic data (both scR
 
 I'm currently a **Research Intern at Boston University** and the **University of Liverpool**.
 
-🔗 **Connect with me:**
+ **Connect with me:**
 - [**Email**](mailto:derrin.bright2022@vitstudent.ac.in) 
 - [**LinkedIn**](https://www.linkedin.com/in/derrin-bright-25457a23b/) 
 - [**Portfolio**](https://derrinbright.github.io/) 
 
-## 💻 Technical Skills
+##  Technical Skills
 
 | Category | Tools & Languages |
 | :--- | :--- |
@@ -24,7 +24,7 @@ I'm currently a **Research Intern at Boston University** and the **University of
 
 ---
 
-## 🔬 Research & Education
+##  Research & Education
 
 ### Research Experience
 - **Research Intern** | Boston University, USA | *Sept 2025 - Present* 
@@ -34,6 +34,7 @@ I'm currently a **Research Intern at Boston University** and the **University of
 ### Education
 - **B.Tech, Biotechnology** (CGPA: 8.69) 
 - Vellore Institute of Technology(VIT), India (2022-Present) 
+
 
 
 
