@@ -282,13 +282,17 @@ section.resume-section {
   transition: .3s ease-in-out;
 }
 
-/* Uniform sizing for institution/organisation logos: every logo sits in the
-   same box and scales proportionally, so nothing gets stretched or squished
-   just because its source file has a different natural shape. */
+/* Uniform sizing for institution/organisation logos. A single fixed box
+   (fixed width AND height) makes near-square seals shrink to tiny icons
+   while wide wordmark logos get squeezed thin - very different visual
+   weights even though the numbers matched. Matching height instead keeps
+   every logo reading as the same size down the page; max-width only
+   steps in to stop the handful of very wide banner logos from running on. */
 .org-logo{
   display: inline-block;
-  width: 170px;
-  height: 70px;
+  height: 68px;
+  width: auto;
+  max-width: 220px;
   object-fit: contain;
   object-position: center;
 }
