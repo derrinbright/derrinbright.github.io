@@ -290,11 +290,20 @@ section.resume-section {
    steps in to stop the handful of very wide banner logos from running on. */
 .org-logo{
   display: inline-block;
-  height: 68px;
+  height: 82px;
   width: auto;
-  max-width: 220px;
+  max-width: 240px;
   object-fit: contain;
   object-position: center;
+}
+
+/* Square/circular seals (IIT Bombay, Alpha Bio Cell, NSS, Chettinad,
+   BioSummit) are narrow at the same height as a wide wordmark logo, so
+   their visual footprint reads as much smaller even though the height
+   matches. Give them extra height so their on-page area is comparable
+   to the wordmark logos instead of looking undersized next to them. */
+.org-logo-badge{
+  height: 120px;
 }
 
 .siz{
