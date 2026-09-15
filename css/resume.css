@@ -282,6 +282,17 @@ section.resume-section {
   transition: .3s ease-in-out;
 }
 
+/* Uniform sizing for institution/organisation logos: every logo sits in the
+   same box and scales proportionally, so nothing gets stretched or squished
+   just because its source file has a different natural shape. */
+.org-logo{
+  display: inline-block;
+  width: 170px;
+  height: 70px;
+  object-fit: contain;
+  object-position: center;
+}
+
 .siz{
   width: 10%;
   height: 10%;
