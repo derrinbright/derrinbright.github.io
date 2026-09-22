@@ -718,39 +718,6 @@ microenvironment and performed differential expression analysis to identify thei
         </div>
       </div>
 
-      <div class="row pub-mar">
-        <div class="col-sm-3 hidden-xs">
-          <img class="pub-img1" src="img/IITB.png" alt="" style="width: 180px; height: 135px;">
-        </div>
-        <div class="col-sm-9 mb-5">
-          <h4 class="pubt">Molecular Subtype Comparison in Breast Cancer Using Co-Expression Networks</h4>
-          <h4 class="puba">Tools: DESeq2, WGCNA, GSEA, MSigDB, R</h4>
-          <div class="pubv">Built an independent DESeq2 and WGCNA pipeline on a large TCGA breast cancer cohort to compare PAM50 basal and HER2 subtypes against luminal A and B, identifying thousands of differentially expressed genes across dozens of co-expression modules. Ran GSEA against the MSigDB Hallmark collection, finding proliferation pathways enriched in basal and HER2 tumours against oestrogen response in luminal tumours, a result independently confirmed by the co-expression and differential expression analyses. Along the way, traced a subtype-labelling error where a third-party annotation source disagreed with official TCGA calls on a large majority of samples, and rebuilt the analysis on the correct GDC calls before drawing any conclusions.</div>
-        </div>
-      </div>
-
-      <div class="row pub-mar">
-        <div class="col-sm-3 hidden-xs">
-          <img class="pub-img1" src="proj/UOL.png" alt="" style="width: 180px; height: 135px;">
-        </div>
-        <div class="col-sm-9 mb-5">
-          <h4 class="pubt">Metabolic Modelling of Richter Transformation</h4>
-          <h4 class="puba">Tools: MATLAB, RAVEN Toolbox, GECKO 3, R (Seurat), Python</h4>
-          <div class="pubv">Built genome-scale metabolic models for five immune cell types across CLL, Richter Transformation and matched healthy donors, reconstructing a large ensemble of models from single-cell RNA-seq and releasing a curated catalogue of 30, including enzyme-constrained versions parameterised per cell type. The models show a one-way metabolic expansion in the transformed state, new capabilities gained and none lost, dominated by fatty-acid synthesis. The part I found most interesting was negative: testing whether the predicted flux values were reproducible showed that most exchange fluxes were not uniquely determined by the models, which changed what the project could legitimately claim, so the released work reports metabolic capability and network structure rather than flux magnitude.</div>
-        </div>
-      </div>
-
-      <div class="row pub-mar">
-        <div class="col-sm-3 hidden-xs">
-          <img class="pub-img1" src="img/NTU.png" alt="" style="width: 180px; height: 135px;">
-        </div>
-        <div class="col-sm-9 mb-5">
-          <h4 class="pubt">Cross-Cohort Replication of an Alzheimer's Transcription-Factor Signature</h4>
-          <h4 class="puba">Tools: R, Bioconductor, VIPER, lmerTest</h4>
-          <div class="pubv">Took a transcription-factor activity signature found in one Alzheimer's brain-bank cohort and tested it in three independent ones, keeping the analysis pipeline identical throughout. The broad pattern replicated, with most factors moving in the same direction, though the specific stress-response factors that motivated the project held up only partially. One candidate cohort initially recommended for the study turned out to contain no usable signal at all once tested, and a widely used public metadata file turned out to carry incorrect pathology staging for a meaningful share of donors after an uncaught correction from the provider. Rebuilding from the corrected source and swapping out the bad cohort came before any of the headline results.</div>
-        </div>
-      </div>
-
     </div>
   </section>
 
