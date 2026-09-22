@@ -279,9 +279,8 @@ I have also worked with computational tools such as AlphaFold for protein struct
         </a>
         <div class="subheading">Project Intern</div>
         <div class="experience-text">
-            <li>Developed a transcription factor activity inference pipeline on large-scale postmortem brain RNA-seq data to investigate gene regulatory dynamics across neurodegenerative disease progression.</li>
-            <li>Screened five candidate validation datasets against a pre-analysis quality check before committing to the full pipeline, ruling out two that looked suitable on paper but showed no usable biological signal.</li>
-            <li>Found that a public metadata file had not been updated after a correction from the data provider, leaving a meaningful share of donors with incorrect pathology staging, and rebuilt the cohort from the corrected source before analysis.</li>
+            <li>Developed a transcription factor activity inference pipeline on large-scale postmortem brain RNA-seq data to investigate gene regulatory changes across neurodegenerative disease progression.</li>
+            <li>Built the pipeline around VIPER-based transcription factor activity inference and linear mixed-effects models, with permutation testing and surrogate variable analysis to account for cohort-level confounders.</li>
             <li><b>Supervisor:</b> Dr. Guillaume Thibault </li>
         </div>
       </div>
@@ -306,8 +305,9 @@ I have also worked with computational tools such as AlphaFold for protein struct
         <div class="subheading">Research Intern</div>
         <div class="experience-text">
             <li>Scanned Long Control Region sequences across 207 HPV types and identified 104 transcription factors with significantly different binding site densities between high-risk and low-risk types.</li>
-          <li>Integrated results with TCGA transcriptomics and public ChIP-seq data, finding over half of the high-risk-enriched TFs expressed in HPV-positive tumors and confirming LCR occupancy for seven of them; first author on the resulting paper in <i>Viruses</i> (2026).</li>
-          <li>Analyzed sequence conservation across clinical isolates of HPV-16 and HPV-18, finding that the identified TF binding sites were highly conserved, suggesting functional constraint on these regulatory elements.</li>
+          <li>Integrated results with TCGA transcriptomics and public ChIP-seq data, finding over half of the high-risk-enriched TFs expressed in HPV-positive tumors and confirming LCR occupancy for seven of them.</li>
+          <li>Analyzed sequence conservation across HPV-16 and HPV-18 clinical isolates and found the identified binding sites were highly conserved across strains.</li>
+          <li>First author on the resulting paper in <i>Viruses</i> (2026).</li>
             <li><b>Supervisor:</b> Dr. Juan Fuxman Bass</li>
         </div>
       </div>
@@ -332,9 +332,7 @@ I have also worked with computational tools such as AlphaFold for protein struct
         <div class="experience-text">
             <li>Built and released a catalogue of 30 genome-scale metabolic models for five immune cell types across CLL, Richter Transformation and healthy donors, reconstructed from a large single-cell bootstrap ensemble using ftINIT and GECKO 3 enzyme constraints.</li>
             <li>Compared the transformed state against both CLL and a matched healthy baseline to separate metabolic capabilities that were genuinely new from ones that were simply restored, with fatty-acid synthesis pathways standing out among the gains.</li>
-            <li>Ran the same comparison across the non-tumour immune cell types and found the metabolic changes were largely confined to the malignant compartment rather than reflecting a broader shift.</li>
-            <li>Designed a reproducibility check on the model outputs and used it to re-scope which results the project could responsibly report, favouring metabolic capability and network structure over any single flux value.</li>
-            <li>Found and fixed a constraint-transfer bug in the enzyme-constrained model build that had been silently inflating predicted growth rates, and verified that the released repository reproduces every model, table and figure from the underlying code and data.</li>
+            <li>Ran flux balance analysis, parsimonious FBA and flux variability analysis across the model catalogue to characterise metabolic capability and flux behaviour for each cell type and condition.</li>
             <li><b>Supervisor:</b> Dr. Francesco Del Carratore</li>
         </div>
       </div>
@@ -360,7 +358,9 @@ I have also worked with computational tools such as AlphaFold for protein struct
         </a>
         <div class="subheading">Research Intern</div>
         <div class="experience-text">
-            <li>Performed differential expression analysis and WGCNA across four autoimmune diseases (SLE, rheumatoid arthritis, type 1 diabetes, ankylosing spondylitis) to identify disease-associated co-expression modules and hub genes, followed by GSEA and PPI network construction.</li>
+            <li>Performed differential expression analysis and WGCNA across four autoimmune diseases (SLE, rheumatoid arthritis, type 1 diabetes, ankylosing spondylitis) to identify disease-associated co-expression modules and hub genes.</li>
+            <li>Followed up with Gene Set Enrichment Analysis and PPI network construction using NetworkAnalyst to uncover dysregulated pathways and functional gene relationships shared across the four diseases.</li>
+            <li>Built and evaluated classification models (Logistic Regression, SVM, XGBoost and a deep neural network) to distinguish disease from healthy states based on gene expression, using Extra Trees feature ranking to select the input genes and testing generalization across diseases.</li>
             <li><b>Supervisor:</b> Dr. Prakriti Tayalia</li>
         </div>
       </div>
