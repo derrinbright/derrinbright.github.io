@@ -281,8 +281,8 @@ I have also worked with computational tools such as AlphaFold for protein struct
         </a>
         <div class="subheading">Project Intern</div>
         <div class="experience-text">
-            <li>Replicated a transcription-factor activity signature for Alzheimer's disease across three independent post-mortem brain cohorts (637 donors), with 21 of 23 discovery factors matching direction of effect (permutation p = 1&times;10<sup>-4</sup>).</li>
-            <li>Found that a public metadata file had not been updated after a 2025 correction, leaving 9% of donors with incorrect pathology staging, and rebuilt the cohort from the corrected source before analysis.</li>
+            <li>Replicated a transcription-factor activity signature for Alzheimer's disease across three independent post-mortem brain cohorts, with most of the original discovery factors matching direction of effect and the overall agreement unlikely to be due to chance.</li>
+            <li>Found that a public metadata file had not been updated after a correction from the data provider, leaving a meaningful share of donors with incorrect pathology staging, and rebuilt the cohort from the corrected source before analysis.</li>
             <li><b>Supervisor:</b> Dr. Guillaume Thibault </li>
         </div>
       </div>
@@ -330,9 +330,9 @@ I have also worked with computational tools such as AlphaFold for protein struct
         </a>
         <div class="subheading">Research Intern</div>
         <div class="experience-text">
-            <li>Built and released 30 genome-scale metabolic models across five immune cell types spanning CLL, Richter Transformation and healthy donors, reconstructed from 1,500 single-cell bootstrap models using ftINIT and GECKO 3 enzyme constraints.</li>
-            <li>Identified a one-way metabolic expansion in Richter Transformation (21 capabilities gained, none lost), with de novo fatty-acid synthesis dominating the gains.</li>
-            <li>Audited flux reproducibility across 1,385 exchange reactions, found none uniquely determined by the models, and re-scoped the analysis to capability and network structure rather than flux magnitude.</li>
+            <li>Built and released a catalogue of 30 genome-scale metabolic models across five immune cell types spanning CLL, Richter Transformation and healthy donors, reconstructed from a large single-cell bootstrap ensemble using ftINIT and GECKO 3 enzyme constraints.</li>
+            <li>Found a one-way metabolic expansion in Richter Transformation relative to CLL, with new capabilities gained and none lost, dominated by fatty-acid synthesis pathways.</li>
+            <li>Audited flux reproducibility across the full exchange-reaction set, found that most fluxes were not uniquely determined by the models, and re-scoped the analysis to capability and network structure rather than flux magnitude.</li>
             <li><b>Supervisor:</b> Dr. Francesco Del Carratore</li>
         </div>
       </div>
@@ -359,8 +359,8 @@ I have also worked with computational tools such as AlphaFold for protein struct
         <div class="subheading">Research Intern</div>
         <div class="experience-text">
             <li>Performed differential expression analysis and WGCNA across four autoimmune diseases (SLE, rheumatoid arthritis, type 1 diabetes, ankylosing spondylitis) to identify disease-associated co-expression modules and hub genes, followed by GSEA and PPI network construction. Contributed to a manuscript under review at <i>Journal of Autoimmunity</i>.</li>
-            <li>Built an independent DESeq2 and WGCNA pipeline on 1,030 TCGA breast cancer tumours to compare PAM50 molecular subtypes, identifying 8,075 differentially expressed genes and 35 co-expression modules, with hub genes extracted from the four modules most strongly associated with subtype.</li>
-            <li>Ran Gene Set Enrichment Analysis against the MSigDB Hallmark collection, recovering all 50 gene sets and confirming proliferation signalling in basal and HER2 tumours against oestrogen response signalling in luminal tumours.</li>
+            <li>Built an independent DESeq2 and WGCNA pipeline on a large TCGA breast cancer cohort to compare PAM50 molecular subtypes, identifying thousands of differentially expressed genes across dozens of co-expression modules, with hub genes extracted from the modules most strongly associated with subtype.</li>
+            <li>Ran Gene Set Enrichment Analysis against the MSigDB Hallmark collection, finding proliferation signalling enriched in basal and HER2 tumours against oestrogen response signalling in luminal tumours.</li>
             <li><b>Supervisor:</b> Dr. Prakriti Tayalia</li>
         </div>
       </div>
@@ -727,7 +727,7 @@ microenvironment and performed differential expression analysis to identify thei
         <div class="col-sm-9 mb-5">
           <h4 class="pubt">Molecular Subtype Comparison in Breast Cancer Using Co-Expression Networks</h4>
           <h4 class="puba">Tools: DESeq2, WGCNA, GSEA, MSigDB, R</h4>
-          <div class="pubv">Built an independent DESeq2 and WGCNA pipeline on 1,030 TCGA breast cancer tumours to compare PAM50 basal and HER2 subtypes against luminal A and B, identifying 8,075 differentially expressed genes and 35 co-expression modules. Ran GSEA against the MSigDB Hallmark collection, recovering all 50 gene sets and finding proliferation pathways enriched in basal and HER2 tumours against oestrogen response in luminal tumours, a result independently confirmed by the co-expression and differential expression analyses. Along the way, traced a subtype-labelling error where a third-party annotation source disagreed with official TCGA calls on 72 percent of samples, and rebuilt the analysis on the correct GDC calls before drawing any conclusions.</div>
+          <div class="pubv">Built an independent DESeq2 and WGCNA pipeline on a large TCGA breast cancer cohort to compare PAM50 basal and HER2 subtypes against luminal A and B, identifying thousands of differentially expressed genes across dozens of co-expression modules. Ran GSEA against the MSigDB Hallmark collection, finding proliferation pathways enriched in basal and HER2 tumours against oestrogen response in luminal tumours, a result independently confirmed by the co-expression and differential expression analyses. Along the way, traced a subtype-labelling error where a third-party annotation source disagreed with official TCGA calls on a large majority of samples, and rebuilt the analysis on the correct GDC calls before drawing any conclusions.</div>
         </div>
       </div>
 
@@ -738,7 +738,7 @@ microenvironment and performed differential expression analysis to identify thei
         <div class="col-sm-9 mb-5">
           <h4 class="pubt">Metabolic Modelling of Richter Transformation</h4>
           <h4 class="puba">Tools: MATLAB, RAVEN Toolbox, GECKO 3, R (Seurat), Python</h4>
-          <div class="pubv">Built genome-scale metabolic models for five immune cell types across CLL, Richter Transformation and matched healthy donors, reconstructing 1,500 models from single-cell RNA-seq and releasing a curated catalogue of 30, including enzyme-constrained versions parameterised per cell type. The models show a one-way metabolic expansion in the transformed state, 21 capabilities gained and none lost, dominated by fatty-acid synthesis. The part I found most interesting was negative: testing whether the predicted flux values were reproducible showed that none of 1,385 exchange fluxes was uniquely determined by the models, which changed what the project could legitimately claim, so the released work reports metabolic capability and network structure rather than flux magnitude.</div>
+          <div class="pubv">Built genome-scale metabolic models for five immune cell types across CLL, Richter Transformation and matched healthy donors, reconstructing a large ensemble of models from single-cell RNA-seq and releasing a curated catalogue of 30, including enzyme-constrained versions parameterised per cell type. The models show a one-way metabolic expansion in the transformed state, new capabilities gained and none lost, dominated by fatty-acid synthesis. The part I found most interesting was negative: testing whether the predicted flux values were reproducible showed that most exchange fluxes were not uniquely determined by the models, which changed what the project could legitimately claim, so the released work reports metabolic capability and network structure rather than flux magnitude.</div>
         </div>
       </div>
 
@@ -749,7 +749,7 @@ microenvironment and performed differential expression analysis to identify thei
         <div class="col-sm-9 mb-5">
           <h4 class="pubt">Cross-Cohort Replication of an Alzheimer's Transcription-Factor Signature</h4>
           <h4 class="puba">Tools: R, Bioconductor, VIPER, lmerTest</h4>
-          <div class="pubv">Took a transcription-factor activity signature found in one Alzheimer's brain-bank cohort (616 donors) and tested it in three independent ones (637 more donors), keeping the analysis pipeline identical throughout. The broad pattern replicated, with 21 of 23 factors moving in the same direction, but only two of the seven stress-response factors that motivated the project actually held up. One candidate cohort initially recommended for the study turned out to contain no usable signal at all once tested, and a widely used public metadata file turned out to carry incorrect pathology staging for 9 percent of donors after an uncaught 2025 correction. Rebuilding from the corrected source and swapping out the bad cohort came before any of the headline results.</div>
+          <div class="pubv">Took a transcription-factor activity signature found in one Alzheimer's brain-bank cohort and tested it in three independent ones, keeping the analysis pipeline identical throughout. The broad pattern replicated, with most factors moving in the same direction, though the specific stress-response factors that motivated the project held up only partially. One candidate cohort initially recommended for the study turned out to contain no usable signal at all once tested, and a widely used public metadata file turned out to carry incorrect pathology staging for a meaningful share of donors after an uncaught correction from the provider. Rebuilding from the corrected source and swapping out the bad cohort came before any of the headline results.</div>
         </div>
       </div>
 
