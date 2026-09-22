@@ -281,9 +281,8 @@ I have also worked with computational tools such as AlphaFold for protein struct
         </a>
         <div class="subheading">Project Intern</div>
         <div class="experience-text">
-            <li> Developing a transcription factor activity inference pipeline on large-scale postmortem brain RNA-seq data to investigate
-gene regulatory dynamics across neurodegenerative disease progression.
-</li>
+            <li>Replicated a transcription-factor activity signature for Alzheimer's disease across three independent post-mortem brain cohorts (637 donors), with 21 of 23 discovery factors matching direction of effect (permutation p = 1&times;10<sup>-4</sup>).</li>
+            <li>Found that a public metadata file had not been updated after a 2025 correction, leaving 9% of donors with incorrect pathology staging, and rebuilt the cohort from the corrected source before analysis.</li>
             <li><b>Supervisor:</b> Dr. Guillaume Thibault </li>
         </div>
       </div>
@@ -307,9 +306,8 @@ gene regulatory dynamics across neurodegenerative disease progression.
         </a>
         <div class="subheading">Research Intern</div>
         <div class="experience-text">
-            <li>Developed an automated bioinformatics pipeline for transcription factor motif analysis across 200+ HPV genomes, identifying differentially enriched TFs between high-risk and low-risk types
-</li>
-          <li> Integrated motif-based approaches with deep learning sequence models to assess regulatory activity and characterise binding site conservation across 1,000+ clinical isolates </li> 
+            <li>Scanned Long Control Region sequences across 207 HPV types and identified 104 transcription factors with significantly different binding site densities between high-risk and low-risk types.</li>
+          <li>Integrated results with TCGA transcriptomics and public ChIP-seq data, finding over half of the high-risk-enriched TFs expressed in HPV-positive tumors and confirming LCR occupancy for seven of them; first author on the resulting paper in <i>Viruses</i> (2026).</li>
             <li><b>Supervisor:</b> Dr. Juan Fuxman Bass</li>
         </div>
       </div>
@@ -332,12 +330,9 @@ gene regulatory dynamics across neurodegenerative disease progression.
         </a>
         <div class="subheading">Research Intern</div>
         <div class="experience-text">
-            <li> Analyzed single-cell RNA-seq data from CLL and Richter’s Transformation patients, developing machine learning models
-(XGBoost, SVM, Random Forest) to differentiate disease states at the transcriptomic level.
-
-</li>
-            <li>Built genome-scale metabolic models (GEMs) for CLL and Richter’s Transformation cell types using the ftINIT algorithm,
-and identified differential metabolic reactions and enriched pathways between disease states and cell types.</li>
+            <li>Built and released 30 genome-scale metabolic models across five immune cell types spanning CLL, Richter Transformation and healthy donors, reconstructed from 1,500 single-cell bootstrap models using ftINIT and GECKO 3 enzyme constraints.</li>
+            <li>Identified a one-way metabolic expansion in Richter Transformation (21 capabilities gained, none lost), with de novo fatty-acid synthesis dominating the gains.</li>
+            <li>Audited flux reproducibility across 1,385 exchange reactions, found none uniquely determined by the models, and re-scoped the analysis to capability and network structure rather than flux magnitude.</li>
             <li><b>Supervisor:</b> Dr. Francesco Del Carratore</li>
         </div>
       </div>
@@ -363,18 +358,14 @@ and identified differential metabolic reactions and enriched pathways between di
         </a>
         <div class="subheading">Research Intern</div>
         <div class="experience-text">
-            <li>Conducted differential expression analysis and Weighted Gene Co-expression Network Analysis (WGCNA) to
-identify key gene modules associated with autoimmune disease progression, followed by Gene Set Enrichment
-Analysis (GSEA) and Protein-Protein Interaction (PPI) network construction using NetworkAnalyst to uncover
-dysregulated pathways and functional gene relationships.</li>
-            <li>Built and evaluated predictive models, including Logistic Regression, SVM, XGBoost, and Deep Neural Networks
-to classify disease vs. healthy states based on gene expression, enhancing biological interpretability through
-integrated network and machine learning approaches.</li>
+            <li>Performed differential expression analysis and WGCNA across four autoimmune diseases (SLE, rheumatoid arthritis, type 1 diabetes, ankylosing spondylitis) to identify disease-associated co-expression modules and hub genes, followed by GSEA and PPI network construction. Contributed to a manuscript under review at <i>Journal of Autoimmunity</i>.</li>
+            <li>Built an independent DESeq2 and WGCNA pipeline on 1,030 TCGA breast cancer tumours to compare PAM50 molecular subtypes, identifying 8,075 differentially expressed genes and 35 co-expression modules, with hub genes extracted from the four modules most strongly associated with subtype.</li>
+            <li>Ran Gene Set Enrichment Analysis against the MSigDB Hallmark collection, recovering all 50 gene sets and confirming proliferation signalling in basal and HER2 tumours against oestrogen response signalling in luminal tumours.</li>
             <li><b>Supervisor:</b> Dr. Prakriti Tayalia</li>
         </div>
       </div>
       <div class="resume-date text-md-right">
-        <span class="text-primary experience-time">May 2025 - Oct 2025</span>
+        <span class="text-primary experience-time">May 2025 - Sept 2026</span>
         <div>
           <div class="brk">
             <img srcset="img/IITB.png" class="org-logo org-logo-badge hov" alt="IIT Bombay" /><br>
@@ -584,10 +575,10 @@ specifications and ResNet with multiple layers for analyzing the input images.</
         <div class="col-sm-3 hidden-xs">
           <img class="pub-img1" src="proj/RA.jpg" alt="" style="width: 180px; height: 135px;">
         </div>
-        <div class="col-sm-9 mb-5">        
-          <h4 class="pubt">Identification of Conserved Functional Modules and Unique Hub Genes across Autoimmune Disorders</h4>
-          <h4 class="puba">Tools: GSEA, NetworkAnalyst, R Studio</h4> 
-          <div class="pubv">Conducting an integrative transcriptomic analysis across autoimmune diseases, combining results from Differential Expression, WGCNA, and GSEA to define a curated list of implicated genes. Constructing and analyzing Protein-Protein Interaction  networks to identify the core genes and biological processes shared across these diseases, while also characterizing the molecular signatures unique to each condition.</div>
+        <div class="col-sm-9 mb-5">
+          <h4 class="pubt">Cross-Disease Autoimmune Transcriptomic Signatures</h4>
+          <h4 class="puba">Tools: DESeq2, WGCNA, GSEA, NetworkAnalyst, R</h4>
+          <div class="pubv">Ran differential expression analysis and WGCNA across four autoimmune diseases (SLE, rheumatoid arthritis, type 1 diabetes, ankylosing spondylitis) to find disease-associated co-expression modules and hub genes, then used GSEA and PPI network construction to separate shared autoimmune biology from disease-specific signals. The manuscript is under review at Journal of Autoimmunity.</div>
           <!-- <div class="publ">
             <ul>
               <li><a target="_blank" href="">PDF</a></li>
@@ -603,13 +594,10 @@ specifications and ResNet with multiple layers for analyzing the input images.</
         <div class="col-sm-3 hidden-xs">
           <img class="pub-img1" src="proj/cc vs hnsc.png" alt="" style="width: 180px; height: 135px;">
         </div>
-        <div class="col-sm-9 mb-5">        
-          <h4 class="pubt">Comparative Transcriptomic Analysis of HPV-Associated Cancers Using Co-Expression Network Modeling</h4>
-          <h4 class="puba">Tools: DESEQ2, WGCNA, Cytoscape, ClusterProfiler, Seurat, Scikit-learn, Pandas, NumPy</h4> 
-          <div class="pubv">Conducted a comparative analysis of HPV-positive cervical and head and neck cancers using TCGA data. Performed
- DESeq2 and WGCNA to identify shared genes between both cancers. Applied machine learning models to filter features, identifying 16 HPV signature genes, and validated findings using
- single-cell RNA-seq analysis. Constructed PPI networks and performed functional enrichment analyses to identify shared molecular mechanisms
- underlying HPV-driven tumorigenesis.</div>
+        <div class="col-sm-9 mb-5">
+          <h4 class="pubt">HPV-Associated Transcriptional Landscape in Cervical and Head and Neck Cancers</h4>
+          <h4 class="puba">Tools: DESeq2, TCGAbiolinks, survival/survminer, pROC, R, Python</h4>
+          <div class="pubv">Built and ran the full HPV-positive versus HPV-negative analysis pipeline for the head and neck cancer arm of a multi-cohort study, constructing a 487-sample TCGA-HNSC cohort (72 HPV-positive, 415 HPV-negative) and identifying 4,292 differentially expressed genes with DESeq2. Independently validated the signal in a separate GEO cohort (GSE74927), finding 3,769 DEGs with around 43 percent concordance with the TCGA result. Built a survival dataset for the HPV-positive patients and tested a 6-gene biomarker panel by Kaplan-Meier and ROC analysis; the lead gene, CDKN2A, reached an AUC of 0.90 in TCGA and 0.98 in the validation cohort. Manuscripts from this work are in revision at two peer-reviewed journals, alongside a co-first-author analysis of the cervical cancer side of the same study.</div>
           <!-- <div class="publ">
             <ul>
               <li><a target="_blank" href="">PDF</a></li>
@@ -732,6 +720,38 @@ microenvironment and performed differential expression analysis to identify thei
         </div>
       </div>
 
+      <div class="row pub-mar">
+        <div class="col-sm-3 hidden-xs">
+          <img class="pub-img1" src="img/IITB.png" alt="" style="width: 180px; height: 135px;">
+        </div>
+        <div class="col-sm-9 mb-5">
+          <h4 class="pubt">Molecular Subtype Comparison in Breast Cancer Using Co-Expression Networks</h4>
+          <h4 class="puba">Tools: DESeq2, WGCNA, GSEA, MSigDB, R</h4>
+          <div class="pubv">Built an independent DESeq2 and WGCNA pipeline on 1,030 TCGA breast cancer tumours to compare PAM50 basal and HER2 subtypes against luminal A and B, identifying 8,075 differentially expressed genes and 35 co-expression modules. Ran GSEA against the MSigDB Hallmark collection, recovering all 50 gene sets and finding proliferation pathways enriched in basal and HER2 tumours against oestrogen response in luminal tumours, a result independently confirmed by the co-expression and differential expression analyses. Along the way, traced a subtype-labelling error where a third-party annotation source disagreed with official TCGA calls on 72 percent of samples, and rebuilt the analysis on the correct GDC calls before drawing any conclusions.</div>
+        </div>
+      </div>
+
+      <div class="row pub-mar">
+        <div class="col-sm-3 hidden-xs">
+          <img class="pub-img1" src="proj/UOL.png" alt="" style="width: 180px; height: 135px;">
+        </div>
+        <div class="col-sm-9 mb-5">
+          <h4 class="pubt">Metabolic Modelling of Richter Transformation</h4>
+          <h4 class="puba">Tools: MATLAB, RAVEN Toolbox, GECKO 3, R (Seurat), Python</h4>
+          <div class="pubv">Built genome-scale metabolic models for five immune cell types across CLL, Richter Transformation and matched healthy donors, reconstructing 1,500 models from single-cell RNA-seq and releasing a curated catalogue of 30, including enzyme-constrained versions parameterised per cell type. The models show a one-way metabolic expansion in the transformed state, 21 capabilities gained and none lost, dominated by fatty-acid synthesis. The part I found most interesting was negative: testing whether the predicted flux values were reproducible showed that none of 1,385 exchange fluxes was uniquely determined by the models, which changed what the project could legitimately claim, so the released work reports metabolic capability and network structure rather than flux magnitude.</div>
+        </div>
+      </div>
+
+      <div class="row pub-mar">
+        <div class="col-sm-3 hidden-xs">
+          <img class="pub-img1" src="img/NTU.png" alt="" style="width: 180px; height: 135px;">
+        </div>
+        <div class="col-sm-9 mb-5">
+          <h4 class="pubt">Cross-Cohort Replication of an Alzheimer's Transcription-Factor Signature</h4>
+          <h4 class="puba">Tools: R, Bioconductor, VIPER, lmerTest</h4>
+          <div class="pubv">Took a transcription-factor activity signature found in one Alzheimer's brain-bank cohort (616 donors) and tested it in three independent ones (637 more donors), keeping the analysis pipeline identical throughout. The broad pattern replicated, with 21 of 23 factors moving in the same direction, but only two of the seven stress-response factors that motivated the project actually held up. One candidate cohort initially recommended for the study turned out to contain no usable signal at all once tested, and a widely used public metadata file turned out to carry incorrect pathology staging for 9 percent of donors after an uncaught 2025 correction. Rebuilding from the corrected source and swapping out the bad cohort came before any of the headline results.</div>
+        </div>
+      </div>
 
     </div>
   </section>
